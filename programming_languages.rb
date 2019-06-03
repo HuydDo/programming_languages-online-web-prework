@@ -5,19 +5,13 @@ def reformat_languages(languages)
   styles =[]
   languages.each do |key,value|
     # hash[key]=value
-
-    styles << key
-    # binding.pry
+    styles = key
+    puts "#{styles}"
     value.each do |k,v|
       hash[k] = v
-      # binding.pry
-      # styles << key
-      # hash[k][:style] = styles
-      hash[:style] = styles
-      # binding.pry
+      	hash[k][:style] = styles
+		  # hash[:style] = styles
     end
-
   end
   hash
-  binding.pry
 end
